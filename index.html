@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メモアプリ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .memo {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            max-width: 500px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"]:checked + .task-text {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .completed {
+            text-decoration: line-through !important;
+            color: #888;
+        }
+
+        .task-text {
+            cursor: pointer;
+            padding: 4px;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        .task-text:hover {
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+
+        .task-input {
+            margin-top: 15px;
+            display: flex;
+        }
+
+        #newTask {
+            flex: 1;
+            padding: 6px;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .status {
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.8em;
+        }
+
+        .new-task-row {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            padding: 4px 0;
+        }
+
+        .add-icon {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #999;
+            cursor: pointer;
+            width: 20px;
+            text-align: center;
+        }
+
+        .edit-input {
+            flex: 1;
+            padding: 2px 4px;
+            margin-right: 5px;
+            border: 1px solid #4CAF50;
+            border-radius: 3px;
+            font-family: sans-serif;
+            font-size: 1em;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .copy-btn {
+            font-size: 0.9em;
+            padding: 4px 8px;
+            background-color: #6c757d;
+        }
+
+        .copy-btn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="memo">
+        <h2 id="date">2025/03/14</h2>
+        <ul id="taskList">
+            <!-- タスクがここに追加されます -->
+        </ul>
+        <div class="new-task-row">
+            <span class="add-icon">+</span>
+            <input type="text" id="newTask" placeholder="リストアイテム">
+        </div>
+        <div class="footer">
+            <div class="status" id="status"></div>
+            <button class="copy-btn" id="copyBtn">日報用にコピー</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

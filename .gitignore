@@ -1,0 +1,42 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+out/
+
+# ログファイル
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS関連のファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタの設定ファイル
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 環境設定ファイル
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# パッケージロックファイル（必要に応じてコメントアウト）
+# package-lock.json
+# yarn.lock
+
+# 一時ファイル
+.tmp/
+temp/
+
+dict/
