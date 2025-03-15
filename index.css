@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+}
+
+/* メインコンテナ */
+.memo {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ヘッダー */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* タスクリスト */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+/* チェックボックス */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.completed {
+    text-decoration: line-through !important;
+    color: #888;
+}
+
+/* タスクテキスト */
+.task-text {
+    cursor: pointer;
+    padding: 2px 4px;
+    user-select: text;
+    -webkit-user-select: text;
+    flex-grow: 1;
+    display: block;
+    margin-right: 5px;
+}
+
+.task-text:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+/* 新規タスク入力 */
+.task-input {
+    margin-top: 15px;
+    display: flex;
+}
+
+#newTask {
+    flex: 1;
+    padding: 6px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* ボタン共通スタイル */
+button {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ステータス表示 */
+.status {
+    margin-top: 15px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+/* 新規タスク追加行 */
+.new-task-row {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    padding: 4px 0;
+}
+
+.add-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #999;
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+}
+
+/* タスク編集入力 */
+.edit-input {
+    flex: 1;
+    padding: 1px 3px;
+    margin-right: 5px;
+    border: 1px solid #4CAF50;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/* フッター */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.copy-btn {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    background-color: #6c757d;
+}
+
+.copy-btn:hover {
+    background-color: #5a6268;
+}
