@@ -43,7 +43,8 @@ npm start
 - タスク領域内をダブルクリックして編集（テキスト部分だけでなく、枠内ならどこでもクリック可能）
 - チェックボックスをクリックしてタスク完了をマーク
 - 「日報用にコピー」ボタンをクリックして、日報形式でタスク一覧をクリップボードにコピー
-- 以下、「日報用にコピー」の結果となります。
+
+以下、「日報用にコピー」の結果となります。
 ```txt
 【2025/5/27の作業内容】
 
@@ -56,5 +57,6 @@ npm start
 ・タスクB
 ```
 
-![Image](https://github.com/user-attachments/assets/c9a6710d-af40-4bf0-bc6d-e441adf0d967)
 
+以下、画面です
+![Image](https://github.com/user-attachments/assets/c9a6710d-af40-4bf0-bc6d-e441adf0d967)
